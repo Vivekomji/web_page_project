@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+
+        <div id="preloader"></div>
 
         <div id= "image-container" style="margin: 20px;"></div>
 
         <script src = "jquery-3.6.0.js"></script>
         <script src = "script.js"></script>
+
+
+        <div id ="demo"> <h2>Astronomy Picture of the Day (APOD)</h2><br>
+One of the most popular websites at NASA is the Astronomy Picture of the Day. In fact, this website is one of the most popular websites across all federal agencies. It has the popular appeal of a Justin Bieber video. This endpoint structures the APOD imagery and associated metadata so that it can be repurposed for other applications. In addition, if the concept_tags parameter is set to True, then keywords derived from the image explanation are returned. These keywords could be used as auto-generated hashtags for twitter or instagram feeds; but generally help with discoverability of relevant imagery.
+</div>
+
+
+        <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display= "none";
+        })
+        </script>
 
     </body>
 </html>
